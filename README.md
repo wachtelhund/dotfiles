@@ -26,5 +26,5 @@ In .gitconfig
 From anywhere
 
 ```
-dotreload
+reloaddot
 ```
