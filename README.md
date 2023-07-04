@@ -3,7 +3,7 @@
 Run install script (while standing in repo dir)
 
 ```
-chmod +x ./install.sh && ./install.sh
+./install.sh
 ```
 
 ### Manual install
