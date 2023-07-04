@@ -9,7 +9,8 @@ if [ ! -d $DEST_DIR ]; then
     else
         echo Repo found, fetching latest version...
         cd $DEST_DIR || exit 1
-        git pull
+        git fetch --all
+        git reset --hard origin/main
 fi
 
 if ! grep -q "source $DEST_DIR/zshaliases" "$HOME/.zshrc"; then
