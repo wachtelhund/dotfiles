@@ -1,9 +1,6 @@
 [core]
         autocrlf = false
         editor = nvim
-[user]
-        name = Hampus Nilsson
-        email = hampus.nilsson@kalmarenergi.se
 [pull]
         rebase = true
 [rebase]
