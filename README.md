@@ -1,4 +1,8 @@
 ### Automatic install
+Clone the repo
+```
+git clone https://github.com/wachtelhund/dotfiles
+```
 
 Run install script (while standing in repo dir)
 
@@ -7,7 +11,10 @@ Run install script (while standing in repo dir)
 ```
 
 ### Manual install
-
+Clone the repo
+```
+git clone https://github.com/wachtelhund/dotfiles
+```
 Add these lines
 
 In .zshrc
