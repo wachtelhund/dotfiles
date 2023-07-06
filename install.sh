@@ -31,8 +31,6 @@ fi
 
 echo "alias reloaddot='$DEST_DIR/install.sh'" > $DEST_DIR/reload
 
-echo "Reloading .zshrc..."
-zsh -i -c "source $HOME/.zshrc"
 
 if ! grep -q "path = $DEST_DIR/gitconfig" "$HOME/.gitconfig"; then
     echo "Adding gitconfig source..."
@@ -43,3 +41,6 @@ if ! grep -q "path = $DEST_DIR/gitconfig" "$HOME/.gitconfig"; then
 else
     echo "The line already exists in .gitconfig. Skipping..."
 fi
+
+echo "Reloading .zshrc..."
+zsh -i -c "source $HOME/.zshrc"
