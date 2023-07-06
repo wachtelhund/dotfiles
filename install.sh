@@ -42,5 +42,4 @@ else
     echo "The line already exists in .gitconfig. Skipping..."
 fi
 
-echo "Reloading .zshrc..."
-zsh -i -c "source $HOME/.zshrc"
+echo Please run "source ~/.zshrc" to load new dotfiles.
