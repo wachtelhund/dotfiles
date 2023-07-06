@@ -1,5 +1,7 @@
 #!/bin/bash
 
+NEW_DEST=$(find $HOME -type d -name "dotfiles")
+echo $NEW_DEST
 REPO_URL="https://github.com/wachtelhund/dotfiles.git"
 DEST_DIR="$HOME/dotfiles"
 
