@@ -21,7 +21,7 @@ if ! grep -q "source $DEST_DIR/zshaliases" "$HOME/.zshrc"; then
 source $DEST_DIR/zshaliases
 " >> "$HOME/.zshrc"
 else
-    echo "The line already exists in .zshrc. Skipping..."
+    echo "Source line already exists in .zshrc. Skipping..."
 fi
 
 if ! grep -q "source $DEST_DIR/reload" "$HOME/.zshrc"; then
@@ -29,6 +29,7 @@ if ! grep -q "source $DEST_DIR/reload" "$HOME/.zshrc"; then
 fi
 
 
+echo Creating realoaddot alias
 echo "alias reloaddot='$DEST_DIR/install.sh'" > $DEST_DIR/reload
 
 
@@ -39,7 +40,5 @@ if ! grep -q "path = $DEST_DIR/gitconfig" "$HOME/.gitconfig"; then
     path = $DEST_DIR/gitconfig
 " >> "$HOME/.gitconfig"
 else
-    echo "The line already exists in .gitconfig. Skipping..."
+    echo "Source line already exists in .gitconfig. Skipping..."
 fi
-
-echo Please run "source ~/.zshrc" to load new dotfiles.
