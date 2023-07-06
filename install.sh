@@ -43,4 +43,4 @@ else
 fi
 
 echo Please run "source ~/.zshrc" to load new dotfiles.
-source ~/.zshrc
+zsh -i -c "source $HOME/.zshrc"
