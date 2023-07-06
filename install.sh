@@ -13,7 +13,7 @@ if [ ! -d $DEST_DIR ]; then
         git fetch --all
         git reset --hard origin/main
 fi
-
+echo $DEST_DIR
 if ! grep -q "source $DEST_DIR/zshaliases" "$HOME/.zshrc"; then
     echo "Adding zshrc source..."
     echo "
