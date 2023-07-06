@@ -28,7 +28,7 @@ In .gitconfig
 	path = <path_to_dotfiles>/gitconfig
 ```
 
-### Fetch latest version of dotfiles
+### Fetch and source latest version of dotfiles
 
 From anywhere
 
