@@ -1,9 +1,8 @@
 #!/bin/bash
 
-NEW_DEST=$(find $HOME -type d -name "dotfiles")
-echo $NEW_DEST
+DEST_DIR=$(find $HOME -type d -name "dotfiles")
+# DEST_DIR="$HOME/dotfiles"
 REPO_URL="https://github.com/wachtelhund/dotfiles.git"
-DEST_DIR="$HOME/dotfiles"
 
 if [ ! -d $DEST_DIR ]; then
         echo Cloning repo...
