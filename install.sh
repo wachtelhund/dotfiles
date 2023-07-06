@@ -43,4 +43,5 @@ else
 fi
 
 echo "Reloading .zshrc..."
+sleep 1
 zsh -i -c "source $HOME/.zshrc"
