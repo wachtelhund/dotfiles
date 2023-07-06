@@ -24,7 +24,12 @@ else
     echo "The line already exists in .zshrc. Skipping..."
 fi
 
-echo "alias reloaddot='$DEST_DIR/install.sh'" >> $DEST_DIR/reload
+if ! grep -q "source $DEST_DIR/reload" "$HOME/.zshrc"; then
+	echo "source $DEST_DIR/reload" >> "$HOME/.zshrc"
+fi
+
+
+echo "alias reloaddot='$DEST_DIR/install.sh'" > $DEST_DIR/reload
 
 echo "Reloading .zshrc..."
 zsh -i -c "source $HOME/.zshrc"
