@@ -42,4 +42,4 @@ else
     echo "The line already exists in .gitconfig. Skipping..."
 fi
 
-echo \nPlease run "source ~/.zshrc" to load new dotfiles.
+echo Please run "source ~/.zshrc" to load new dotfiles.
