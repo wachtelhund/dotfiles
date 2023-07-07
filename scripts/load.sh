@@ -22,7 +22,6 @@ for file in $(find $DEST_DIR/dots -type f -name ".*"); do
     fi
 done
 
-echo "Sourcing utils/aliases from $DEST_DIR/utils/aliases to $DEST_DIR/dots/.zshrc"
 if ! grep -q "utils/aliases" "$DEST_DIR/dots/.zshrc"; then
     echo "source $DEST_DIR/utils/aliases" >> "$DEST_DIR/dots/.zshrc"
 else
