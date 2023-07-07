@@ -1,2 +1,2 @@
-alias dotreload='/home/hampus/dotfiles/install.sh'
-alias dotpush='/home/hampus/dotfiles/scripts/push.sh'
+alias dotreload='/home/hampus/tools/dotfiles/install.sh'
+alias dotpush='/home/hampus/tools/dotfiles/scripts/push.sh'

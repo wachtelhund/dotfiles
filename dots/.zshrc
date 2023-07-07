@@ -15,5 +15,4 @@ alias grb='git rebase'
 alias grbi='git rebase -i'
 alias gcm='git commit -m'
 alias reload='source ~/.zshrc'
-alias dotreload='/home/hampus/dotfiles/install.sh'
 source /home/hampus/dotfiles/utils/aliases
