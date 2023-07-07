@@ -23,7 +23,11 @@ for file in $(find $DEST_DIR/dots -type f -name ".*"); do
 done
 
 echo "Sourcing utils/aliases from $DEST_DIR/utils/aliases to $DEST_DIR/dots/.zshrc"
-echo "source $DEST_DIR/utils/aliases" >> "$DEST_DIR/dots/.zshrc"
+if ! grep -q "utils/aliases" "$DEST_DIR/dots/.zshrc"; then
+    echo "source $DEST_DIR/utils/aliases" >> "$DEST_DIR/dots/.zshrc"
+else
+    echo "Source line already exists in $DEST_DIR/dots/.zshrc. Skipping..."
+fi
 
 sed -i "s|alias dotreload=.*|alias dotreload='$DEST_DIR/install.sh'|" "$DEST_DIR/utils/aliases"
 sed -i "s|alias dotpush=.*|alias dotpush='$DEST_DIR/scripts/push.sh'|" "$DEST_DIR/utils/aliases"
