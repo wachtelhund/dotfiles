@@ -1,6 +1,6 @@
 [core]
         autocrlf = false
-        editor = nvim
+        editor = code
 [pull]
         rebase = true
 [rebase]
