@@ -1,6 +1,6 @@
 [core]
         autocrlf = false
-        editor = code
+        editor = code --wait
 [pull]
         rebase = true
 [rebase]
