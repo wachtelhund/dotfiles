@@ -15,5 +15,6 @@ alias gaa='git add -A'
 alias grb='git rebase'
 alias grbi='git rebase -i'
 alias gcm='git commit -m'
+alias vim='nvim'
 alias reload='source ~/.zshrc'
 source /home/hampus/things/dotfiles/utils/aliases
